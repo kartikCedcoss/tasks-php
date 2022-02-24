@@ -180,6 +180,5 @@ foreach($ceu as $key => $value){
   echo "<br>";
  ?>
 
- <?php 
 
- ?>
+
