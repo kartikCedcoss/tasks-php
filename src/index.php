@@ -5,7 +5,7 @@ $ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels
 
 echo  "The captal of Netherlands is ". $ceu['Netherlands']."<br>"; 
 echo  "The captal of Greece is ". $ceu['Greece']."<br>";
-echo  "The captal of Germany is ". $ceu['Germany'."<br>"];
+echo  "The captal of Germany is ". $ceu['Germany']."<br>";
 echo "<br>";
 ?>
 
@@ -70,8 +70,36 @@ $temp =array(78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62,
  for($i=($arrLength-7);$i<$arrLength;$i++){
      echo  $temp[$i]." ";
  }
+ echo "<br>";
+ echo "<br>";
+?>
+<?php
+
+//task6
+$array1 = array(array(77, 87), array(23, 45));
+$array2 = array("w3resource", "com");
  
 
+
+ function meregearray($arr1,$arr2){
+     $temp = array();
+     
+     $temp []=$arr1;
+     if(is_scalar($arr2)){
+         $temp[]=$arr2;
+     }
+     else{
+      foreach($arr2 as $key => $value){
+          $temp[]= $value;
+
+              }
+     }
+
+  return $temp;
+ }
+echo '<pre>';
+print_r(array_map('meregearray',$array2,$array1));
+
+
+echo "<br>";
 ?>
-
-
