@@ -163,8 +163,8 @@ print_r(filter($array1,$array2));
  
  ?>
  <?php
- include_once('another.php');
- echo "<table border='1'>"; 
+ include_once('countryArr.php');
+ echo "<table border='1' style='border-collapse:collapse;  border-color: silver; '>";  
  echo "<tr>"."<th>"."Country"."</th>"."<th>". "Capital"."</th>";
 foreach($ceu as $key => $value){
 
@@ -176,5 +176,10 @@ foreach($ceu as $key => $value){
 
 }
   echo "</table";
- 
+  echo "<br>";
+  echo "<br>";
+ ?>
+
+ <?php 
+
  ?>
