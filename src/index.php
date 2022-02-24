@@ -10,18 +10,22 @@ echo "<br>";
 ?>
 
 <?php
+//task 2
 $x = array(1, 2, 3, 4, 5);
  echo var_dump($x)."<br>";
  unset($x[3]);
  $x = array_values($x);
  echo var_dump($x);
- 
+ echo "<br>";
+ ?>
 
+ <?php
+ //task 3
+ $color = array(4 => 'white', 6 => 'green', 11=> 'red');
+  echo reset($color);
+  echo "<br>";
 
-
-
-
-?>
+ ?>
 
 
 
