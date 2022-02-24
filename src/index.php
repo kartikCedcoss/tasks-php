@@ -6,6 +6,21 @@ $ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels
 echo  "The captal of Netherlands is ". $ceu['Netherlands']."<br>"; 
 echo  "The captal of Greece is ". $ceu['Greece']."<br>";
 echo  "The captal of Germany is ". $ceu['Germany'."<br>"];
+echo "<br>";
+?>
+
+<?php
+$x = array(1, 2, 3, 4, 5);
+ echo var_dump($x)."<br>";
+ unset($x[3]);
+ $x = array_values($x);
+ echo var_dump($x);
+ 
+
+
+
+
+
 ?>
 
 
