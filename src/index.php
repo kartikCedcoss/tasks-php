@@ -102,4 +102,41 @@ print_r(array_map('meregearray',$array2,$array1));
 
 
 echo "<br>";
+echo "<br>";
+
+?>
+
+
+<?php 
+//task7
+
+$Color = array('A' => 'Blue', 'B' => 'Green', 'c' => 'Red');
+ 
+function uppercase($input1){
+$input1 = array_flip($input1);
+$input1 = array_change_key_case($input1, CASE_UPPER);
+$input1 = array_flip($input1);
+
+return $input1;
+}
+
+
+
+function lowercase($input2){
+$input2 = array_flip($input2);
+$input2 = array_change_key_case($input2, CASE_LOWER);
+$input2 = array_flip($input2);
+return  $input2;
+     
+}
+
+
+echo "Values in LowerCase .";
+print_r(lowercase($Color)); 
+
+echo "<br>";
+
+echo "Values in UpperCase .";
+print_r(uppercase($Color)); 
+
 ?>
