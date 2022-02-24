@@ -1,11 +1,11 @@
 <?php
 // task 1
-$ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid", "Sweden"=>"Stockholm", "United Kingdom"=>"London", "Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius", "Czech Republic"=>"Prague", "Estonia"=>"Tallin", "Hungary"=>"Budapest", "Latvia"=>"Riga", "Malta"=>"Valetta", "Austria" => "Vienna", "Poland"=>"Warsaw") ;
+$ceu1 = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid", "Sweden"=>"Stockholm", "United Kingdom"=>"London", "Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius", "Czech Republic"=>"Prague", "Estonia"=>"Tallin", "Hungary"=>"Budapest", "Latvia"=>"Riga", "Malta"=>"Valetta", "Austria" => "Vienna", "Poland"=>"Warsaw") ;
  
 
-echo  "The captal of Netherlands is ". $ceu['Netherlands']."<br>"; 
-echo  "The captal of Greece is ". $ceu['Greece']."<br>";
-echo  "The captal of Germany is ". $ceu['Germany']."<br>";
+echo  "The captal of Netherlands is ". $ceu1['Netherlands']."<br>"; 
+echo  "The captal of Greece is ". $ceu1['Greece']."<br>";
+echo  "The captal of Germany is ". $ceu1['Germany']."<br>";
 echo "<br>";
 ?>
 
@@ -163,7 +163,18 @@ print_r(filter($array1,$array2));
  
  ?>
  <?php
+ include_once('another.php');
+ echo "<table border='1'>"; 
+ echo "<tr>"."<th>"."Country"."</th>"."<th>". "Capital"."</th>";
+foreach($ceu as $key => $value){
+
  
- 
+ echo "<tr>";
+ echo "<td>".$key ."</td>" . "<td>". $value . "</td>"  ;
+ echo "</tr>";
+
+
+}
+  echo "</table";
  
  ?>
