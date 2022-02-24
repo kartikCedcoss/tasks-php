@@ -26,6 +26,25 @@ $x = array(1, 2, 3, 4, 5);
   echo "<br>";
 
  ?>
+ <?php
+  //task 4
+  $arr = array(1,2,3,4,5);
+  foreach($arr as $newarr){
+      echo $newarr;
+     
+  }
+  echo "<br>";
+  $val= "$";
+  $pos= 3;
+ $newarr=array_merge(array_slice($arr, 0, $pos), array($val), array_slice($arr, $pos)); 
+ 
+ foreach($newarr as $newarray){
+     echo $newarray;
+     
+    
+ }
+ 
+ ?>
 
 
 
