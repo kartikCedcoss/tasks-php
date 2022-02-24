@@ -138,5 +138,32 @@ echo "<br>";
 
 echo "Values in UpperCase .";
 print_r(uppercase($Color)); 
-
+echo "<br>";
+echo "<br>";
 ?>
+
+
+ <?php
+//task 8 
+
+ $array1 = array('c1' => 'Red', 'c2' => 'Green', 'c3' => 'White', 'c4' => 'Black');
+ $array2 = array('c2','c4');
+ print_r ($array1);
+ print_r ($array2);
+ function filter($arr1,$arr2){
+        $newArr2 = array_flip($arr2);
+            $filt = array_diff_key($arr1,$newArr2);
+            return  $filt;
+    
+     
+  
+ }
+print_r(filter($array1,$array2));
+
+ 
+ ?>
+ <?php
+ 
+ 
+ 
+ ?>
