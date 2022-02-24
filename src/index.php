@@ -30,7 +30,7 @@ $x = array(1, 2, 3, 4, 5);
   //task 4
   $arr = array(1,2,3,4,5);
   foreach($arr as $newarr){
-      echo $newarr;
+      echo $newarr." ";
      
   }
   echo "<br>";
@@ -39,13 +39,39 @@ $x = array(1, 2, 3, 4, 5);
  $newarr=array_merge(array_slice($arr, 0, $pos), array($val), array_slice($arr, $pos)); 
  
  foreach($newarr as $newarray){
-     echo $newarray;
+     echo $newarray." ";
      
-    
+     
+ }
+ echo "<br>";
+ ?>
+<?php 
+//task 5
+$temp =array(78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73);
+
+ $arrLength = count($temp);
+ $newTemp=0;
+ foreach($temp as $i){
+     $newTemp += $i;
+
+ }
+ echo "<br>";
+
+ echo   "Average Temprature is ".$newTemp/$arrLength;
+ echo "<br>";
+
+ sort($temp);
+ echo "List of Seven Lowest Temprature is : ";
+ for ($i=0;$i<7;$i++){
+     echo $temp[$i]." ";
+ }
+ echo "<br>";
+ echo "List of Seven Highest Temprature is : ";
+ for($i=($arrLength-7);$i<$arrLength;$i++){
+     echo  $temp[$i]." ";
  }
  
- ?>
 
-
+?>
 
 
