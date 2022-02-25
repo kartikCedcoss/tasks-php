@@ -180,5 +180,24 @@ foreach($ceu as $key => $value){
   echo "<br>";
  ?>
 
-
+<?php
+session_start();
+ 
+$_SESSION['arrI'] = array();
+ 
+print_r($_SESSION['arr']);
+ 
+foreach($_SESSION['arr'] as $ele )
+{
+      if($ele == 2)
+      {
+          $ele = 6;
+      }
+    array_push($_SESSION['arrI'],$ele);
+}
+print_r($_SESSION['arrI']);
+ 
+ 
+ 
+?>
 
